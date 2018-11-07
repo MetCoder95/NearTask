@@ -76,9 +76,7 @@ class Quote {
       { vowel: 0, consonants: 0 }
     );
 
-    const length = result.vowel + result.consonants;
-
-    return (result.vowel / length).toFixed(2) > 0.65 ? "Best Joke in History!" : undefined;
+    return (result.vowel / result.consonants).toFixed(2) > 0.65 ? "Best Joke in History!" : undefined;
   }
 }
 
